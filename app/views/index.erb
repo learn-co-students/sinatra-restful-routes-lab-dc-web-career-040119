@@ -1,0 +1,8 @@
+<h1>Welcome to the recipe page! <br> Here's a list of all our available recipes </h1><br>
+
+
+<ul>
+<% @recipes.each do |recipe| %>
+<li><a href="/recipes/<%= recipe.id%>"> <%= recipe.name %> </a></li>
+<%end%>
+</ul>
